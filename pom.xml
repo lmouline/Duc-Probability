@@ -45,8 +45,39 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>com.datathings</groupId>
+                <artifactId>j2ts-mavenplugin</artifactId>
+                <version>97</version>
+                <executions>
+                    <execution>
+                        <id>transpile</id>
+                        <goals>
+                            <goal>java2ts</goal>
+                        </goals>
+                        <configuration>
+                            <name>sample</name>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
+
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>datathings.public</id>
+            <url>https://registry.datathings.com/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
 
 </project>

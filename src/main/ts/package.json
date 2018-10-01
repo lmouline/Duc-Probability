@@ -1,0 +1,14 @@
+{
+  "name": "duc-probability",
+  "display-name": "duc-probability",
+  "description": "Probability librairy",
+  "version": "0.0.1",
+  "license": "",
+  "repository": {},
+  "devDependencies": {
+    "typescript": "^2.6.1"
+  },
+  "scripts": {
+    "build": "tsc -p ./"
+  }
+}
